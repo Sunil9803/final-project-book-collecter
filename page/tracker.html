@@ -1,111 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Collector | Book Tracker</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/tracker.css" />
-  </head>
-  <body>
-<header>
-        <div class="header-container">
-            <div class="logo"><i class="fas fa-book"></i> Book Collector</div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/page/tracker.html">Book Tracker</a></li>
-                    <li><a href="/page/about.html">About</a></li>
-                    <li><a href="/page/gallery.html" >Gallery</a></li>
-                    <li><a href="/page/contact.html">Contact</a></li>
-                </ul>
-            </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Collector | Tracker</title>
+
+  <!-- Fonts & Icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Your CSS (relative to this page/) -->
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/tracker.css" />
+</head>
+<body>
+
+  <!-- ─── HEADER ─── -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <i class="fas fa-book"></i> Book Collector
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="tracker.html" class="active">Book Tracker</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ─── MAIN CONTENT ─── -->
+  <main>
+    <section>
+      <h2>Book Tracker</h2>
+      <div class="tracker-container">
+        <div class="form-container">
+          <form id="bookForm">
+            <div class="form-group">
+              <label for="title">Book Title</label>
+              <input type="text" id="title" required />
+            </div>
+            <div class="form-group">
+              <label for="author">Author</label>
+              <input type="text" id="author" required />
+            </div>
+            <div class="form-group">
+              <label for="status">Status</label>
+              <select id="status">
+                <option value="unread">Unread</option>
+                <option value="reading">Reading</option>
+                <option value="read">Read</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Add Book</button>
+          </form>
         </div>
-    </header>
-    <main>
-      <section>
-        <h2>Book Tracker</h2>
-        <div class="tracker-container">
-          <div class="form-container">
-            <form id="bookForm">
-              <div class="form-group">
-                <label for="title">Book Title</label>
-                <input type="text" id="title" required />
-              </div>
-              <div class="form-group">
-                <label for="author">Author</label>
-                <input type="text" id="author" required />
-              </div>
-              <div class="form-group">
-                <label for="status">Status</label>
-                <select id="status">
-                  <option value="unread">Unread</option>
-                  <option value="reading">Reading</option>
-                  <option value="read">Read</option>
-                </select>
-              </div>
-              <button type="submit" class="btn">Add Book</button>
-            </form>
-          </div>
-          <div class="book-list">
-            <h3>Your Books</h3>
-            <div class="books-container" id="bookList"></div>
-          </div>
+        <div class="book-list">
+          <h3>Your Books</h3>
+          <div class="books-container" id="bookList"></div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
     <div class="footer-container">
-            <div class="footer-section">
-                <h3>Book Collector</h3>
-                <p>Your personal library management system. Track, organize, and rediscover your book collection.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="/index.html" >Home</a></li>
-                    <li><a href="tracker.html" >Book Tracker</a></li>
-                    <li><a href="about.html" >About</a></li>
-                    <li><a href="gallery.html" >Gallery</a></li>
-                    <li><a href="contact.html" >Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Resources</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Reading Tips</a></li>
-                    <li><a href="#">Community</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Subscribe to Newsletter</h3>
-                <p>Get updates on new features and reading inspiration.</p>
-                <div class="form-group">
-                    <input type="email" placeholder="Your email address">
-                    <button class="btn mt-1">Subscribe</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="copyright">
-            <p>&copy; 2025 Book Collector. All rights reserved. | Final Project for Web Development Course</p>
-        </div>
-    </footer>
-    <script src="/js/header.js"></script>
-    <script src="/js/footer.js"></script>
-    
-    <script src="/js/tracker.js"></script>
-  </body>
+      <p>&copy; 2024 Book Collector. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Your JS (relative to this page/) -->
+  <script src="../js/tracker.js" defer></script>
+</body>
 </html>

@@ -1,109 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Collector | Contact</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/contact.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Collector | Contact</title>
+
+  <!-- Fonts & Icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Your CSS (relative to this page/) -->
+  <link rel="stylesheet" href="../css/main.css"/>
+  <link rel="stylesheet" href="../css/contact.css"/>
 </head>
 <body>
- <header>
-        <div class="header-container">
-            <div class="logo"><i class="fas fa-book"></i> Book Collector</div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/page/tracker.html">Book Tracker</a></li>
-                    <li><a href="/page/about.html">About</a></li>
-                    <li><a href="/page/gallery.html" >Gallery</a></li>
-                    <li><a href="/page/contact.html">Contact</a></li>
-                </ul>
-            </nav>
+
+  <!-- ─── HEADER ─── -->
+  <header>
+    <div class="header-container">
+      <div class="logo"><i class="fas fa-book"></i> Book Collector</div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="tracker.html">Book Tracker</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ─── MAIN CONTENT ─── -->
+  <main>
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <span>example@email.com</span>
+          </div>
+          <div class="contact-method">
+            <i class="fas fa-phone"></i>
+            <span>+1234567890</span>
+          </div>
         </div>
-    </header>
-   
-    <main>
-        <section>
-            <h2>Contact</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-method">
-                        <i class="fas fa-envelope"></i>
-                        <span>example@email.com</span>
-                    </div>
-                    <div class="contact-method">
-                        <i class="fas fa-phone"></i>
-                        <span>+1234567890</span>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send</button>
-                    <div class="success-message" id="contactSuccess">Thank you for contacting us!</div>
-                </form>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required/>
             </div>
-        </section>
-    </main>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send</button>
+          <div class="success-message" id="contactSuccess">Thank you for contacting us!</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
     <div class="footer-container">
-            <div class="footer-section">
-                <h3>Book Collector</h3>
-                <p>Your personal library management system. Track, organize, and rediscover your book collection.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="/index.html" >Home</a></li>
-                    <li><a href="tracker.html" >Book Tracker</a></li>
-                    <li><a href="about.html" >About</a></li>
-                    <li><a href="gallery.html" >Gallery</a></li>
-                    <li><a href="contact.html" >Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Resources</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Reading Tips</a></li>
-                    <li><a href="#">Community</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Subscribe to Newsletter</h3>
-                <p>Get updates on new features and reading inspiration.</p>
-                <div class="form-group">
-                    <input type="email" placeholder="Your email address">
-                    <button class="btn mt-1">Subscribe</button>
-                </div>
-            </div>
+      <div class="footer-section">
+        <h3>Book Collector</h3>
+        <p>Your personal library management system. Track, organize, and rediscover your book collection.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="tracker.html">Book Tracker</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul class="footer-links">
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Reading Tips</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Subscribe to Newsletter</h3>
+        <p>Get updates on new features and reading inspiration.</p>
+        <div class="form-group">
+          <input type="email" placeholder="Your email address"/>
+          <button class="btn mt-1">Subscribe</button>
         </div>
-        
-        <div class="copyright">
-            <p>&copy; 2025 Book Collector. All rights reserved. | Final Project for Web Development Course</p>
-        </div>
-    </footer>
-    <script src="/js/header.js"></script>
-    <script src="/js/footer.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/contact.js"></script>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Book Collector. All rights reserved. | Final Project for Web Development Course</p>
+    </div>
+  </footer>
+
+  <!-- Your JS (relative to this page/) -->
+  <script src="../js/contact.js" defer></script>
 </body>
 </html>

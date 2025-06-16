@@ -1,108 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Collector | Gallery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/gallery.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Collector | Gallery</title>
+
+  <!-- Fonts & Icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Your CSS (relative to this page/) -->
+  <link rel="stylesheet" href="../css/main.css"/>
+  <link rel="stylesheet" href="../css/gallery.css"/>
 </head>
 <body>
- <header>
-        <div class="header-container">
-            <div class="logo"><i class="fas fa-book"></i> Book Collector</div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/page/tracker.html">Book Tracker</a></li>
-                    <li><a href="/page/about.html">About</a></li>
-                    <li><a href="/page/gallery.html" >Gallery</a></li>
-                    <li><a href="/page/contact.html">Contact</a></li>
-                </ul>
-            </nav>
+
+  <!-- ─── HEADER ─── -->
+  <header>
+    <div class="header-container">
+      <div class="logo"><i class="fas fa-book"></i> Book Collector</div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="tracker.html">Book Tracker</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ─── MAIN CONTENT ─── -->
+  <main>
+    <section>
+      <h2>Gallery</h2>
+      <div class="gallery-controls">
+        <span>Browse some beautiful book covers!</span>
+      </div>
+      <div class="gallery-grid">
+        <div
+          class="gallery-item"
+          style="background-image:url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80')"
+        >
+          <div class="gallery-info">
+            <h3>Book One</h3>
+            <p>By Author A</p>
+          </div>
         </div>
-    </header>
-   
-    <main>
-        <section>
-            <h2>Gallery</h2>
-            <div class="gallery-controls">
-                <span>Browse some beautiful book covers!</span>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80')">
-                    <div class="gallery-info">
-                        <h3>Book One</h3>
-                        <p>By Author A</p>
-                    </div>
-                </div>
-                <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=400&q=80')">
-                    <div class="gallery-info">
-                        <h3>Book Two</h3>
-                        <p>By Author B</p>
-                    </div>
-                </div>
-                <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80')">
-                    <div class="gallery-info">
-                        <h3>Book Three</h3>
-                        <p>By Author C</p>
-                    </div>
-                </div>
-                <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=400&q=80')">
-                    <div class="gallery-info">
-                        <h3>Book Four</h3>
-                        <p>By Author D</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-      <div class="footer-container">
-            <div class="footer-section">
-                <h3>Book Collector</h3>
-                <p>Your personal library management system. Track, organize, and rediscover your book collection.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="/index.html" >Home</a></li>
-                    <li><a href="tracker.html" >Book Tracker</a></li>
-                    <li><a href="about.html" >About</a></li>
-                    <li><a href="gallery.html" >Gallery</a></li>
-                    <li><a href="contact.html" >Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Resources</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Reading Tips</a></li>
-                    <li><a href="#">Community</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Subscribe to Newsletter</h3>
-                <p>Get updates on new features and reading inspiration.</p>
-                <div class="form-group">
-                    <input type="email" placeholder="Your email address">
-                    <button class="btn mt-1">Subscribe</button>
-                </div>
-            </div>
+        <div
+          class="gallery-item"
+          style="background-image:url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=400&q=80')"
+        >
+          <div class="gallery-info">
+            <h3>Book Two</h3>
+            <p>By Author B</p>
+          </div>
         </div>
-        
-        <div class="copyright">
-            <p>&copy; 2025 Book Collector. All rights reserved. | Final Project for Web Development Course</p>
+        <div
+          class="gallery-item"
+          style="background-image:url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80')"
+        >
+          <div class="gallery-info">
+            <h3>Book Three</h3>
+            <p>By Author C</p>
+          </div>
         </div>
-    </footer>
-    <script src="/js/header.js"></script>
-    <script src="/js/footer.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/gallery.js"></script>
+        <div
+          class="gallery-item"
+          style="background-image:url('https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=400&q=80')"
+        >
+          <div class="gallery-info">
+            <h3>Book Four</h3>
+            <p>By Author D</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Book Collector</h3>
+        <p>Your personal library management system. Track, organize, and rediscover your book collection.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="tracker.html">Book Tracker</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul class="footer-links">
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Reading Tips</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Subscribe to Newsletter</h3>
+        <p>Get updates on new features and reading inspiration.</p>
+        <div class="form-group">
+          <input type="email" placeholder="Your email address"/>
+          <button class="btn mt-1">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Book Collector. All rights reserved. | Final Project for Web Development Course</p>
+    </div>
+  </footer>
+
+  <!-- Your JS (relative to this page/) -->
+  <script src="../js/gallery.js" defer></script>
 </body>
 </html>
